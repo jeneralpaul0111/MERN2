@@ -3,7 +3,7 @@ import ReviewsDAO from "./dao/reviewsDAO.js"
 export default class ReviewsController {
     static async apiPostReview(req, res, next) {
         try {
-            const restaurantID = req.body.restaurantID
+            const restaurantID = req.body.restaurant_id
             const review = req.body.text
             const userInfo = {
                 name: req.body.name,
@@ -16,7 +16,7 @@ export default class ReviewsController {
                 restaurantID,
                 userInfo,
                 review,
-                date
+                date,
             )
 
             res.json({status: "success"})
