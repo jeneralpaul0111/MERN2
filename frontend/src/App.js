@@ -1,93 +1,40 @@
 //import logo from './logo.svg';
 import './App.css';
 
-import React from "react";
-//import {Switch, Route, Link} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.css';
-
-// import addReview from "./components/add-review";
-// import Restaurants from "./components/Restaurants";
-// import restaurantList from "./components/restaurant-list";
-//  import Login from "./components/Login";
-import Home from "./Pages/Home"
-import {BrowserRouter,Route} from "react-router-dom";
+// import addReview from './components/add-review';
+// import restaurants from './components/restaurants';
+// import restaurantsList from './components/restaurants-list';
+// import Login from './components/login';
 
 function App() {
-return (
-  <BrowserRouter>
-  <div className="App">
-      <h1>React Router DOM Tutorial</h1>
-    </div>
-    </BrowserRouter>
-);
-}
-export default App;
-
-/* function App() {
-
-    const [user, setUser] = React.useState(null);
-
-    async function login(user=null){
-      setUser(user);
-    }
-    async function logout(){
-      setUser(null);
-    }
-
   return (
-   
     <div>
-     <nav className="navbar navbar-empand navbar-dark bg-dark">
-      <a href="/Restaurants" classname="navbar-brand">
-        Restaurant Reviews
-      </a>
-      <div className = "navbar-nav mr-auto">
-        <li className = "nav-item">
-          <link to= {"/Restaurants"} className="nav-link">
-            Restaurants
-          </link>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="/">Navbar w/ text</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarText">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        { <li className="nav-item"> { user ? ( 
-          <a onClick={logout} className="nav-link" style={{cursor:"pointer"}}>
-          logout {user.name} </a>
-          ) : (
-            <link to={"/login"} className = "nav-link">
-              Login
-            </link>)
-          }
-        </li> }
-      </div>
-     </nav>
-
-     { <div className="container mt-3">
-      <switch>
-        <Route exact path={["/","/Restaurants"]} component = {restaurantList} />
-        <Route 
-          path="/restaurants/:id/review" 
-          render = {(props) => (
-            <addReview {...props} user={user} />
-          )}
-          
-        />
-        <Route 
-          path="/Restaurants/:id"
-          render={(props) => (
-            <restaurants {...props} user={user} />
-            )
-          }
-          />
-          <Route
-          path="/Login"
-          render={(props) => (
-            <Login {...props} login={login} />
-          )}
-          />
-       </switch>
-     </div> }
+        <li className="nav-item">
+          <a className="nav-link" href="/">Features</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/">Pricing</a>
+        </li>
+      </ul>
+      <span className="navbar-text">
+        Navbar text with an inline element
+      </span>
     </div>
-   
+  </div>
+</nav>
+    </div>
   );
 }
 
 export default App;
- */

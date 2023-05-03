@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 
-function restaurants() {
+function restaurantsList() {
   return (
     <div className="App">
  hello
@@ -9,4 +9,4 @@ function restaurants() {
   );
 }
 
-export default restaurants;
+export default restaurantsList;
